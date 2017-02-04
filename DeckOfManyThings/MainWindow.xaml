@@ -1,0 +1,23 @@
+﻿<Window x:Class="DeckOfManyThings.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DeckOfManyThings"
+        mc:Ignorable="d"
+        Title="Deck of Many Things" Height="351" Width="525" Icon="background.jpg">
+    <Grid>
+        <Image x:Name="cardImage" HorizontalAlignment="Left" Height="300" Margin="10,10,0,0" VerticalAlignment="Top" Width="175"/>
+        <Button x:Name="drawCardButton" Content="Draw Card" HorizontalAlignment="Left" Margin="190,290,0,0" VerticalAlignment="Top" Width="75" Click="DrawNewCard"/>
+        <TextBox x:Name="cardSummaryTextBox" HorizontalAlignment="Left" Height="20" Margin="190,10,0,0" TextWrapping="Wrap" Text="A summary of the card you drew" VerticalAlignment="Top" Width="317" IsEnabled="False"/>
+        <RichTextBox x:Name="cardDescriptionRichTextBox" HorizontalAlignment="Left" Height="250" Margin="190,35,0,0" VerticalAlignment="Top" Width="317" IsEnabled="False">
+            <FlowDocument>
+                <Paragraph>
+                    <Run Text="The full details of the card you drew."/>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+        <Button x:Name="settingsButton" Content="Settings" HorizontalAlignment="Left" Margin="432,290,0,0" VerticalAlignment="Top" Width="75" Click="SetSettings"/>
+
+    </Grid>
+</Window>

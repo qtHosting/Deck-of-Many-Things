@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="DeckOfManyThings.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="LocationName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\DeckOfManyThings\</Value>
+    </Setting>
+    <Setting Name="Pictures" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\DeckImages\</Value>
+    </Setting>
+    <Setting Name="DeckToUse" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\Default\</Value>
+    </Setting>
+    <Setting Name="DatabaseName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">database.sqlite</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
