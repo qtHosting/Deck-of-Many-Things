@@ -51,6 +51,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_2A3D0C2570BB4B7B9F59ADE4E823F118"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_31B7CC8B8B7B484DB4ABFA678BB352EB"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -232,12 +238,6 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_D03B0553975523D65258497592D2F999"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_AB94DBB300C442C5AF2614E60F218FCD"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -271,6 +271,12 @@
         "OwnerKey" = "8:_ED2C9BD4A6A181E3DE3847F6D0EDC680"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_D03B0553975523D65258497592D2F999"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -289,6 +295,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -305,6 +319,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -440,6 +470,26 @@
             "TargetName" = "8:Jester.jpg"
             "Tag" = "8:"
             "Folder" = "8:_49EEDA0E67034594A33DCF63550B1ACC"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2A3D0C2570BB4B7B9F59ADE4E823F118"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\..\\Desktop\\ogl.html"
+            "TargetName" = "8:ogl.html"
+            "Tag" = "8:"
+            "Folder" = "8:_81BF9A06014A4EFB9E00EEC77BA5747C"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -1122,7 +1172,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Deck of Many Things"
         "ProductCode" = "8:{15201DA7-C90E-4CEE-BADC-7BBC0D391182}"
-        "PackageCode" = "8:{72FA57E7-7532-4C43-9BAA-8DF5947972B0}"
+        "PackageCode" = "8:{A007D0E3-2070-47BC-B151-265753B806CC}"
         "UpgradeCode" = "8:{D6722766-4D37-419C-BA72-E26B7D1F2BD6}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"

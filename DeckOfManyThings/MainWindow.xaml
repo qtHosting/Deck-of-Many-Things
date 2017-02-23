@@ -5,19 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DeckOfManyThings"
         mc:Ignorable="d"
-        Title="Deck of Many Things" Height="351" Width="525" Icon="background.jpg">
+        ResizeMode="NoResize"
+        Title="Deck of Many Things" Height="361.969" Width="525" Icon="background.jpg">
     <Grid>
-        <Image x:Name="cardImage" HorizontalAlignment="Left" Height="300" Margin="10,10,0,0" VerticalAlignment="Top" Width="175"/>
-        <Button x:Name="drawCardButton" Content="Draw Card" HorizontalAlignment="Left" Margin="190,290,0,0" VerticalAlignment="Top" Width="75" Click="DrawNewCard"/>
-        <TextBox x:Name="cardSummaryTextBox" HorizontalAlignment="Left" Height="20" Margin="190,10,0,0" TextWrapping="Wrap" Text="A summary of the card you drew" VerticalAlignment="Top" Width="317" IsEnabled="False"/>
-        <RichTextBox x:Name="cardDescriptionRichTextBox" HorizontalAlignment="Left" Height="250" Margin="190,35,0,0" VerticalAlignment="Top" Width="317" IsEnabled="False">
+        <DockPanel>
+            <Menu DockPanel.Dock="Top">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Settings" Click="SetSettings"/>
+                    <MenuItem Header="_About" Click="About"/>
+                    <MenuItem Header="_Close" Click="CloseApplication"/>
+                </MenuItem>
+            </Menu>
+            <StackPanel></StackPanel>
+        </DockPanel>
+        <Image x:Name="cardImage" HorizontalAlignment="Left" Height="300" Margin="10,21,0,0" VerticalAlignment="Top" Width="175"/>
+        <Button x:Name="drawCardButton" Content="Draw Card" HorizontalAlignment="Left" Margin="432,301,0,0" VerticalAlignment="Top" Width="75" Click="DrawNewCard"/>
+        <TextBox x:Name="cardSummaryTextBox" HorizontalAlignment="Left" Height="20" Margin="190,46,0,0" TextWrapping="Wrap" Text="A summary of the card you drew" VerticalAlignment="Top" Width="317" IsReadOnly="True"/>
+        <RichTextBox x:Name="cardDescriptionRichTextBox" HorizontalAlignment="Left" Height="225" Margin="190,71,0,0" VerticalAlignment="Top" Width="317" IsReadOnly="True">
             <FlowDocument>
                 <Paragraph>
                     <Run Text="The full details of the card you drew."/>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
-        <Button x:Name="settingsButton" Content="Settings" HorizontalAlignment="Left" Margin="432,290,0,0" VerticalAlignment="Top" Width="75" Click="SetSettings"/>
+        <Label x:Name="label" Content="*Open Game Content" HorizontalAlignment="Left" Margin="190,298,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="cardNameTextBox" HorizontalAlignment="Left" Height="20" Margin="190,21,0,0" TextWrapping="Wrap" Text="The Name of the Card you Drew" VerticalAlignment="Top" Width="317" IsReadOnly="True"/>
 
     </Grid>
 </Window>

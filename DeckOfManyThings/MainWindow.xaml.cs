@@ -1,17 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
 using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace DeckOfManyThings
 {
@@ -55,11 +46,22 @@ namespace DeckOfManyThings
         private void DisplayCardInformation(Card card)
         {
             Title = card.strCardName;
+            cardNameTextBox.Text = card.strCardName;
             cardDescriptionRichTextBox.Document.Blocks.Clear();
             cardImage.Source = new BitmapImage(new Uri(card.StrCardArtLocation));
             cardSummaryTextBox.Text = card.strCardSummary;
             cardDescriptionRichTextBox.Document.Blocks.Add(new Paragraph(new Run(card.strCardDescription)));
         }
 
+        private void CloseApplication(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void About(object sender, RoutedEventArgs e)
+        {
+            About about = new About();
+            about.Show();
+        }
     }
 }
